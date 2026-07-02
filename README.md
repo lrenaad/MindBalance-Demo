@@ -38,24 +38,22 @@ MindBalance is an educational 2D game made with Godot.
 The game helps children learn basic financial awareness and safe 
 digital behavior through simple interactive adventures.
 
+
 ## Hardware Prototype
 
-This project also includes a hardware prototype that supports the game idea.
+This project also includes a hardware prototype related to the game idea.
 
 ### Simulator
 
 You can view the hardware simulator here:
 
-[Open Simulator](https://wokwi.com/projects/305569599398609473)
+[Open Simulator](PUT_SIMULATOR_LINK_HERE](https://wokwi.com/projects/305569599398609473)
 
 ### 3D Model
 
-You can view the 3D model here:
+The 3D model file is included in this repository.
 
-[Open 3D Model]()
+File location:
 
-## Hardware Notes
-
-- The simulator link shows the electronic/hardware part of the project.
-- The 3D model link shows the physical prototype design.
-- These links are included for testing, review, and presentation purposes.
+```text
+Hardware/3D_Model/
