@@ -1,4 +1,4 @@
-# MindBalance - by FinSpark Team
+# MindBalance - by FinZen Team
 
 ## How to Run the Project
 
@@ -29,10 +29,10 @@ pic/
 fonts/
 button etc/
 Fajr/
+```
 
-# About the Project
+## About the Project
 
 MindBalance is an educational 2D game made with Godot.
 
 The game helps children learn basic financial awareness and safe digital behavior through simple interactive adventures.
-
