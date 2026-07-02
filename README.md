@@ -35,4 +35,27 @@ Fajr/
 
 MindBalance is an educational 2D game made with Godot.
 
-The game helps children learn basic financial awareness and safe digital behavior through simple interactive adventures.
+The game helps children learn basic financial awareness and safe 
+digital behavior through simple interactive adventures.
+
+## Hardware Prototype
+
+This project also includes a hardware prototype that supports the game idea.
+
+### Simulator
+
+You can view the hardware simulator here:
+
+[Open Simulator](https://wokwi.com/projects/305569599398609473)
+
+### 3D Model
+
+You can view the 3D model here:
+
+[Open 3D Model]()
+
+## Hardware Notes
+
+- The simulator link shows the electronic/hardware part of the project.
+- The 3D model link shows the physical prototype design.
+- These links are included for testing, review, and presentation purposes.
