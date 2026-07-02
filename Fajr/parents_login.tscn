@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://41wdy7sq320m"]
+
+[ext_resource type="Texture2D" uid="uid://cw7epkc3cxqm2" path="res://Fajr/background.webp" id="1_k323s"]
+
+[node name="parents_login" type="Control" unique_id=1159506422]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=750670445]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 651.0
+texture = ExtResource("1_k323s")
+
+[node name="Parent\'sDashboard" type="Label" parent="." unique_id=401793270]
+modulate = Color(0.972549, 0.7529412, 0.8235294, 1)
+layout_mode = 0
+offset_left = 248.0
+offset_top = 47.0
+offset_right = 897.0
+offset_bottom = 186.0
+scale = Vector2(1, 1.848)
+text = "لوحة تحكم ولي الأمر"
