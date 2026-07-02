@@ -1,4 +1,4 @@
-# MindBalance - by FinZen Team
+# MindBalance - by FinSpark Team
 
 ## How to Run the Project
 
