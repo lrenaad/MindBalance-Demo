@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://b72vpvrw8hven"]
+
+[ext_resource type="Script" uid="uid://dtupsypf7e681" path="res://Scenes/file/parents_painting.gd" id="1_aih6r"]
+[ext_resource type="Texture2D" uid="uid://cts2licpjo6s2" path="res://pic/6901c3cd-f7e1-45b4-a33f-48800da592ca.JPG" id="1_oiai8"]
+[ext_resource type="FontFile" uid="uid://cgkjsb5i81y8t" path="res://Fajr/Cairo-Bold.ttf" id="2_oiai8"]
+[ext_resource type="Texture2D" uid="uid://dh8eoek4fdy4x" path="res://pic/IMG_2696-removebg-preview.png" id="4_yrm68"]
+[ext_resource type="AudioStream" uid="uid://3uq8imko68f7" path="res://Assets/Sounds/ClickSound.mp3" id="5_yrm68"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5wuom"]
+bg_color = Color(0.105882354, 0.18039216, 0.23921569, 0.73333335)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.9529412, 0.8392157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_r3gju"]
+font = ExtResource("2_oiai8")
+font_size = 36
+font_color = Color(1, 0.9529412, 0.8392157, 1)
+outline_size = 3
+outline_color = Color(0.105882354, 0.18039216, 0.23921569, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6war4"]
+bg_color = Color(0.3529412, 0.24313726, 0.16862746, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.9529412, 0.8392157, 1)
+
+[node name="Parents_painting" type="Control" unique_id=346175510]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+layout_direction = 2
+script = ExtResource("1_aih6r")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1940227655]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+texture = ExtResource("1_oiai8")
+expand_mode = 1
+
+[node name="LoginPanel" type="Panel" parent="." unique_id=409448367]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.0
+offset_top = -107.0
+offset_right = 201.0
+offset_bottom = 165.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5wuom")
+
+[node name="PasswordLabel" type="Label" parent="LoginPanel" unique_id=44527011]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 7.0
+offset_right = 325.0
+offset_bottom = 75.0
+theme_override_font_sizes/font_size = 15
+text = "لوحة ولي الامر"
+label_settings = SubResource("LabelSettings_r3gju")
+horizontal_alignment = 1
+
+[node name="PasswordInput" type="LineEdit" parent="LoginPanel" unique_id=1054470239]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 86.0
+offset_right = 386.0
+offset_bottom = 131.0
+alignment = 1
+secret = true
+
+[node name="LoginButton" type="Button" parent="LoginPanel" unique_id=1154095023]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 146.0
+offset_right = 297.0
+offset_bottom = 196.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.8392157, 1)
+theme_override_fonts/font = ExtResource("2_oiai8")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_6war4")
+text = "  تسجيل دخول  "
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=802997857]
+layout_mode = 1
+offset_left = 35.0
+offset_top = 35.0
+offset_right = 145.0
+offset_bottom = 90.0
+texture_normal = ExtResource("4_yrm68")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=1679808074]
+stream = ExtResource("5_yrm68")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

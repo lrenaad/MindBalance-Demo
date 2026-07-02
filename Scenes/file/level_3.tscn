@@ -1,0 +1,255 @@
+[gd_scene format=3 uid="uid://cwwxqi47s3a3s"]
+
+[ext_resource type="Script" uid="uid://bbc0412te0gkl" path="res://Scenes/file/level_3.gd" id="1_ghrvs"]
+[ext_resource type="Texture2D" uid="uid://eduoo12ofvhg" path="res://pic/65688886-0d2f-4152-a74c-1c01ec0d511a.JPG" id="1_liaj6"]
+[ext_resource type="Texture2D" uid="uid://1buhysa6qafs" path="res://pic/storee.PNG" id="4_b60u5"]
+[ext_resource type="Texture2D" uid="uid://c444ua0dsfhva" path="res://pic/WhatsApp_Image_2026-07-02_at_9.01.20_AM__3_-removebg-preview.png" id="5_ghrvs"]
+[ext_resource type="Texture2D" uid="uid://dev654ar12lmi" path="res://pic/accomplishments.PNG" id="5_kmy7e"]
+[ext_resource type="Texture2D" uid="uid://d1u20802j506v" path="res://pic/WhatsApp_Image_2026-07-02_at_9.01.20_AM__2_-removebg-preview.png" id="6_jvy75"]
+[ext_resource type="Texture2D" uid="uid://b6bpuodqqg3sa" path="res://pic/WhatsApp_Image_2026-07-02_at_9.01.20_AM-removebg-preview.png" id="7_g0tlw"]
+[ext_resource type="Texture2D" uid="uid://dmty402joqxrw" path="res://pic/IMG_2695-removebg-preview.png" id="8_833wy"]
+[ext_resource type="Texture2D" uid="uid://daawbsts0mth7" path="res://pic/WhatsApp_Image_2026-07-02_at_9.01.20_AM__1_-removebg-preview.png" id="8_keufu"]
+[ext_resource type="Texture2D" uid="uid://dh8eoek4fdy4x" path="res://pic/IMG_2696-removebg-preview.png" id="9_ghrvs"]
+[ext_resource type="Texture2D" uid="uid://dxss07aehu2x" path="res://Assets/Characters/coins-removebg-preview.png" id="10_833wy"]
+[ext_resource type="Texture2D" uid="uid://sdh1dnfnwlvo" path="res://Assets/Characters/level-removebg-preview.png" id="12_ghrvs"]
+[ext_resource type="AudioStream" uid="uid://3uq8imko68f7" path="res://Assets/Sounds/ClickSound.mp3" id="13_ghrvs"]
+
+[node name="level3" type="Control" unique_id=433368034]
+layout_mode = 3
+anchors_preset = 0
+layout_direction = 2
+script = ExtResource("1_ghrvs")
+
+[node name="Background" type="TextureRect" parent="." unique_id=2108654124]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1150.0
+offset_bottom = 651.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_liaj6")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1576453211]
+layout_mode = 0
+offset_left = 377.0
+offset_top = 12.0
+offset_right = 960.3334
+offset_bottom = 250.33331
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_833wy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BackButton" type="TextureButton" parent="." unique_id=960857656]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 35.0
+offset_right = 145.0
+offset_bottom = 90.0
+texture_normal = ExtResource("9_ghrvs")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CoinsPanel" type="TextureRect" parent="." unique_id=346400647]
+layout_mode = 0
+offset_left = 876.0001
+offset_top = 24.999992
+offset_right = 986.0001
+offset_bottom = 79.99999
+texture = ExtResource("10_833wy")
+expand_mode = 1
+
+[node name="CoinsLabel" type="Label" parent="." unique_id=26156673]
+layout_mode = 0
+offset_left = 931.0
+offset_top = 29.0
+offset_right = 949.0
+offset_bottom = 74.0
+theme_override_colors/font_outline_color = Color(0.7882353, 0.7019608, 0.49411765, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 22
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelPanel" type="TextureRect" parent="." unique_id=1797890340]
+layout_mode = 0
+offset_left = 998.0
+offset_top = 25.0
+offset_right = 1108.0
+offset_bottom = 81.0
+texture = ExtResource("12_ghrvs")
+expand_mode = 1
+
+[node name="LevelLabel" type="Label" parent="." unique_id=866763079]
+layout_mode = 0
+offset_left = 1054.0
+offset_top = 29.0
+offset_right = 1072.0
+offset_bottom = 74.0
+theme_override_colors/font_outline_color = Color(0.7882353, 0.7019608, 0.49411765, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 22
+text = "- "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FraudButton" type="TextureButton" parent="." unique_id=582897137]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 253.0
+offset_right = 332.0
+offset_bottom = 470.0
+texture_normal = ExtResource("5_ghrvs")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="FraudTitle" type="Label" parent="." unique_id=1005519494]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 236.0
+offset_right = 315.0
+offset_bottom = 271.0
+theme_override_colors/font_color = Color(0.7882353, 0.7019608, 0.49411765, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 23
+text = "فخ الاحتيال"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FraudLevelLable" type="Label" parent="." unique_id=1615018620]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 446.0
+offset_right = 352.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 25
+text = "4  / - ⭐️"
+
+[node name="NeedWantButton" type="TextureButton" parent="." unique_id=847240294]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 276.0
+offset_right = 563.0
+offset_bottom = 451.0
+texture_normal = ExtResource("6_jvy75")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NeedWantTitle" type="Label" parent="." unique_id=1206609529]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 237.0
+offset_right = 559.0
+offset_bottom = 272.0
+theme_override_colors/font_color = Color(0.7882353, 0.7019608, 0.49411765, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 23
+text = "الحاجة أو الرغبة"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NeedWantLable" type="Label" parent="." unique_id=1334846305]
+layout_mode = 0
+offset_left = 367.0
+offset_top = 446.0
+offset_right = 547.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 25
+text = "🔒"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SavingButton" type="TextureButton" parent="." unique_id=1015283325]
+layout_mode = 0
+offset_left = 607.00006
+offset_top = 275.0
+offset_right = 817.8109
+offset_bottom = 527.70276
+scale = Vector2(0.74, 0.74)
+texture_normal = ExtResource("7_g0tlw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SavingTitle" type="Label" parent="." unique_id=940830664]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 235.0
+offset_right = 789.0
+offset_bottom = 270.0
+theme_override_colors/font_color = Color(0.7882353, 0.7019608, 0.49411765, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 23
+text = "الصرف أو الادخار"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SavingLable" type="Label" parent="." unique_id=965569599]
+layout_mode = 0
+offset_left = 599.0
+offset_top = 446.0
+offset_right = 779.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 25
+text = "🔒"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LifeBalanceButton" type="TextureButton" parent="." unique_id=2057704084]
+layout_mode = 0
+offset_left = 837.0
+offset_top = 277.0
+offset_right = 1007.0
+offset_bottom = 435.0
+texture_normal = ExtResource("8_keufu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="LifeBalanceTitle" type="Label" parent="." unique_id=608637551]
+layout_mode = 0
+offset_left = 863.0
+offset_top = 239.0
+offset_right = 983.0
+offset_bottom = 273.0
+theme_override_colors/font_color = Color(0.7882353, 0.7019608, 0.49411765, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 24
+text = "موازنة الحياة"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LifeBalanceLable" type="Label" parent="." unique_id=561910207]
+layout_mode = 0
+offset_left = 834.0
+offset_top = 446.0
+offset_right = 1014.0
+offset_bottom = 481.0
+theme_override_font_sizes/font_size = 25
+text = "🔒"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StoreButton" type="TextureButton" parent="." unique_id=2048378183]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 494.0
+offset_right = 891.0
+offset_bottom = 999.0
+scale = Vector2(0.35, 0.35)
+texture_normal = ExtResource("4_b60u5")
+
+[node name="AchivementsButton" type="TextureButton" parent="." unique_id=961251093]
+layout_mode = 0
+offset_left = 566.0
+offset_top = 495.00003
+offset_right = 1060.0
+offset_bottom = 1000.0
+scale = Vector2(0.35, 0.35)
+texture_normal = ExtResource("5_kmy7e")
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=18444206]
+stream = ExtResource("13_ghrvs")

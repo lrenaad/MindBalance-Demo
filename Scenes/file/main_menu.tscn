@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://c1p4spomrx6u8"]
+
+[ext_resource type="Script" uid="uid://b8uv6faau6ok7" path="res://Scenes/file/main_menu.gd" id="1_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://c0bs0rvrfbea4" path="res://pic/b07fd89f-c41a-4266-8059-c3f93f52c099.JPG" id="2_jix8l"]
+[ext_resource type="Texture2D" uid="uid://dp7uw03ifjcsd" path="res://button etc/startbutton-removebg-preview.png" id="3_jix8l"]
+[ext_resource type="Texture2D" uid="uid://cjvbdsugxow4d" path="res://button etc/parentbutton-removebg-preview.png" id="4_glbon"]
+[ext_resource type="AudioStream" uid="uid://3uq8imko68f7" path="res://Assets/Sounds/ClickSound.mp3" id="5_glbon"]
+
+[node name="MainMenu" type="Control" unique_id=56721894]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+layout_direction = 2
+script = ExtResource("1_fu7sn")
+
+[node name="Backgroound" type="TextureRect" parent="." unique_id=1758684168]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jix8l")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="StartButton" type="TextureButton" parent="." unique_id=1312818955]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 376.0
+offset_top = 295.0
+offset_right = 776.0
+offset_bottom = 405.0
+texture_normal = ExtResource("3_jix8l")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ParentButton" type="TextureButton" parent="." unique_id=1889567883]
+layout_mode = 0
+offset_left = 383.0
+offset_top = 440.0
+offset_right = 763.0
+offset_bottom = 525.0
+texture_normal = ExtResource("4_glbon")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=61512751]
+stream = ExtResource("5_glbon")
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ParentButton" to="." method="_on_parent_button_pressed"]

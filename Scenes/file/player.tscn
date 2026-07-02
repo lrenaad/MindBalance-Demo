@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://qju6spo7bqv0"]
+
+[ext_resource type="Script" uid="uid://b46wb6x2tngfx" path="res://Scenes/file/player.gd" id="1_uvnfx"]
+[ext_resource type="Texture2D" uid="uid://cri8kabpckp0b" path="res://Assets/Characters/boy-removebg-preview.png" id="2_a3d8c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dkjjf"]
+size = Vector2(152, 215)
+
+[node name="Player" type="CharacterBody2D" unique_id=194784633]
+script = ExtResource("1_uvnfx")
+
+[node name="PlayerSprite" type="Sprite2D" parent="." unique_id=1384244914]
+position = Vector2(524, 383)
+scale = Vector2(0.75999993, 0.87599987)
+texture = ExtResource("2_a3d8c")
+region_rect = Rect2(199.9657, 249.28313, 68.751526, 106.142624)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1265236760]
+position = Vector2(523, 451)
+shape = SubResource("RectangleShape2D_dkjjf")
