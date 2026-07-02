@@ -47,7 +47,7 @@ This project includes a hardware prototype related to the game idea.
 
 You can view the 3D model documentation here:
 
-[Open 3D Model PDF](Hardware/3D_Model/AMD_MODEL.pdf)
+[Open 3D Model PDF](Hardware/3D_Model/AMD_MODEL1.pdf)
 
 ### Simulator
 
