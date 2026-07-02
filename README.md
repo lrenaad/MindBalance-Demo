@@ -41,19 +41,16 @@ digital behavior through simple interactive adventures.
 
 ## Hardware Prototype
 
-This project also includes a hardware prototype related to the game idea.
+This project includes a hardware prototype related to the game idea.
+
+### 3D Model PDF
+
+You can view the 3D model documentation here:
+
+[Open 3D Model PDF](Hardware/3D_Model/AMD_MODEL.pdf)
 
 ### Simulator
 
 You can view the hardware simulator here:
 
-[Open Simulator](PUT_SIMULATOR_LINK_HERE](https://wokwi.com/projects/305569599398609473)
-
-### 3D Model
-
-The 3D model file is included in this repository.
-
-File location:
-
-```text
-Hardware/3D_Model/
+[Open Simulator](https://wokwi.com/projects/305569599398609473)
